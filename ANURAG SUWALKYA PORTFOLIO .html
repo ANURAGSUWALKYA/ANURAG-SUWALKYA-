@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anurag Suwalkya Portfolio</title>
+
+<meta name="description" content="Official portfolio of Anurag Suwalkya — Video Editor, Videographer, and Social Media Manager. Watch reels, brand work, and get in touch." />
+<meta name="keywords" content="Anurag Suwalkya, video editor, videographer, social media manager, portfolio, reels, Royal Enfield, Behrouz Biryani, Thumbs Up, Campus Sutra, LuxuryCarCare, Folkculture, Brio Apparels" />
+<meta name="author" content="Anurag Suwalkya" />
+
+<!-- Open Graph for social sharing -->
+<meta property="og:title" content="Anurag Suwalkya Portfolio" />
+<meta property="og:description" content="Video Editor • Videographer • Social Media Manager. Watch my reels and brand projects." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://anuragsuwalkya.com/" />
+<meta property="og:image" content="preview.jpg" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Anurag Suwalkya Portfolio" />
+<meta name="twitter:description" content="Video Editor • Videographer • Social Media Manager. Watch my reels and brand projects." />
+<meta name="twitter:image" content="preview.jpg" />
+
+<meta name="description" content="Portfolio website of Anurag Suwalkya — Video Editor, Videographer, and Social Media Manager. Watch reels, view brand work, and get in touch.">
+<meta name="theme-color" content="#0f1115">
+<style>
+  :root{
+    --bg:#0b0e14;
+    --panel:#121826;
+    --card:#151c2f;
+    --text:#e8eef6;
+    --muted:#aab5c8;
+    --accent:#7aa2ff;
+    --gold:#c8ac64;
+    --border:rgba(255,255,255,.08);
+    --shadow:0 12px 28px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6;scroll-behavior:smooth}
+  a{color:var(--accent);text-decoration:none;transition:.2s}
+  a:hover{color:var(--gold);}
+  .container{max-width:1120px;margin:0 auto;padding:0 20px}
+  /* Nav */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(11,14,20,.9);backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border)}
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .brand{font-weight:900;font-size:20px;letter-spacing:.3px}
+  .brand span{background:linear-gradient(135deg,#8ab4ff,var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .navlinks{display:flex;gap:18px;align-items:center}
+  .navlinks a{color:var(--muted)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;
+    border:1px solid var(--border);background:#0f1524;color:var(--text);
+    font-weight:700;box-shadow:var(--shadow);transition:transform .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.primary{background:linear-gradient(135deg,#4f46e5,#2563eb)}
+  .btn.gold{background:linear-gradient(135deg,#b38e3c,#e6d393);color:#171717}
+  /* Hero */
+  .hero{padding:70px 0 50px;text-align:center}
+  .headline{font-size:clamp(30px,5vw,52px);font-weight:900;margin:8px 0 14px;line-height:1.15;
+    animation:fadeIn 1s ease both}
+  .headline .grad{background:linear-gradient(135deg,#7aa2ff,#a3c4ff,var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:18px;margin-bottom:18px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px auto;justify-content:center}
+  .chip{border:1px solid var(--border);background:#0f1628;padding:8px 14px;border-radius:999px;
+    color:var(--muted);font-size:14px;transition:.2s}
+  .chip:hover{background:var(--accent);color:#fff}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+  /* Section */
+  .section{padding:50px 0}
+  .sec-title{text-align:center;margin-bottom:24px}
+  .sec-title h2{font-size:clamp(22px,3vw,32px);margin:0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;
+    box-shadow:var(--shadow);transition:transform .2s}
+  .card:hover{transform:translateY(-4px)}
+  .work{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+  .work a.btn{align-self:flex-end}
+  /* Stats */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:20px}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:center}
+  .stat .num{font-size:clamp(22px,4vw,36px);font-weight:900}
+  .stat .lbl{color:var(--muted)}
+  /* Contact */
+  .contact{display:flex;flex-direction:column;gap:12px;align-items:center}
+  /* Footer */
+  footer{padding:26px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center;font-size:14px}
+  /* WhatsApp */
+  .whatsapp{position:fixed;bottom:20px;right:20px;z-index:100}
+  .whatsapp a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;
+    background:#25D366;border-radius:50%;box-shadow:0 4px 10px rgba(0,0,0,.3);color:#fff;font-size:28px}
+</style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <div class="brand">Anurag Suwalkya Portfolio</div>
+      <div class="navlinks">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a class="btn primary" href="mailto:workforanuragsuwalkya@gmail.com">Hire Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="headline">I turn raw visuals into <span class="grad">viral stories</span> that grow brands 🚀</h1>
+      <p class="sub">Video Editor • Videographer • Social Media Manager</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:workforanuragsuwalkya@gmail.com">Start a Project</a>
+        <a class="btn gold" href="#work">See My Work ↓</a>
+        <a class="btn" href="https://www.instagram.com/anuragsuwalkya" target="_blank">DM on Instagram</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Reels & Shorts</span>
+        <span class="chip">Ad Films</span>
+        <span class="chip">Color Grading</span>
+        <span class="chip">Content Strategy</span>
+        <span class="chip">YouTube & Instagram</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="work" class="section">
+      <div class="container">
+        <div class="sec-title"><h2>Featured Work — Click to Watch</h2></div>
+        <div class="grid">
+          <div class="card work">
+            <div><b>Royal Enfield — Campaign Reel</b><br><span style="color:var(--muted)">Instagram</span></div>
+            <a class="btn" href="https://www.instagram.com/reel/DIq_ohehM1j/?igsh=dWkwZ2YwcDc4ODZh" target="_blank">Open →</a>
+          </div>
+          <div class="card work">
+            <div><b>Sample Reel</b><br><span style="color:var(--muted)">Instagram</span></div>
+            <a class="btn" href="https://www.instagram.com/reel/DA-r0Q5qgAH/?igsh=MTQ0bGdvbmtjYjBtdA==" target="_blank">Open →</a>
+          </div>
+          <div class="card work">
+            <div><b>LuxuryCarCare — Page</b><br><span style="color:var(--muted)">Instagram</span></div>
+            <a class="btn" href="https://www.instagram.com/luxurycarcareofficial?igsh=MXg5dmZoeTZwd3Z4ZQ==" target="_blank">Visit →</a>
+          </div>
+          <div class="card work">
+            <div><b>Folkculture Clothing — Page</b><br><span style="color:var(--muted)">Instagram</span></div>
+            <a class="btn" href="https://www.instagram.com/folkcultureclothing?igsh=MWdzZ2w4YnB4b2UxZA==" target="_blank">Visit →</a>
+          </div>
+          <div class="card work">
+            <div><b>Brio Apparels — Page</b><br><span style="color:var(--muted)">Instagram</span></div>
+            <a class="btn" href="https://www.instagram.com/brioapparels?igsh=MWdjMHkxanM2YXdtMg==" target="_blank">Visit →</a>
+          </div>
+          <div class="card work">
+            <div><b>Bikers Heaven India — Page</b><br><span style="color:var(--muted)">Instagram</span></div>
+            <a class="btn" href="https://www.instagram.com/bikers_heaven_india?igsh=ejU2Z3F1d2xzNWtt" target="_blank">Visit →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section" style="background:linear-gradient(180deg,rgba(122,162,255,.06),rgba(200,172,100,.05));border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="container">
+        <div class="sec-title"><h2>Services</h2></div>
+        <div class="grid">
+          <div class="card"><h3>Video Editing & Color</h3><p>High-impact edits for Ads, Reels, YouTube & films with cinematic color grading.</p></div>
+          <div class="card"><h3>Videography & Direction</h3><p>Product & fashion shoots, events, and story-driven brand visuals.</p></div>
+          <div class="card"><h3>Social Media Management</h3><p>Growth strategy, content calendars, paid campaigns, and performance tracking.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sec-title"><h2>Impact in Numbers</h2></div>
+        <div class="stats">
+          <div class="stat"><div class="num">3+ yrs</div><div class="lbl">Experience</div></div>
+          <div class="stat"><div class="num">50K+</div><div class="lbl">Audiences Grown</div></div>
+          <div class="stat"><div class="num">1M+</div><div class="lbl">Views on Reels</div></div>
+          <div class="stat"><div class="num">100+</div><div class="lbl">Projects Delivered</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="sec-title"><h2>Let’s Work Together</h2></div>
+        <div class="contact">
+          <a class="btn" href="mailto:workforanuragsuwalkya@gmail.com">📧 workforanuragsuwalkya@gmail.com</a>
+          <a class="btn" href="tel:+918287234034">📞 +91 8287234034</a>
+          <a class="btn" href="https://www.instagram.com/anuragsuwalkya" target="_blank">📱 @anuragsuwalkya</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Anurag Suwalkya • Built with ❤️</footer>
+
+  <div class="whatsapp"><a href="https://wa.me/918287234034" target="_blank">💬</a></div>
+</body>
+</html>
